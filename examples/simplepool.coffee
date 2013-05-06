@@ -3,7 +3,5 @@
 
 SimplePool = require "#{process.cwd()}/lib/simplepool"
 
-config = {}
-
-simplepool = new SimplePool()
-simplepool.init config
+simplepool = new SimplePool(['obj1', 'obj2'])
+simplepool.get()
