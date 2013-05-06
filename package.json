@@ -1,7 +1,7 @@
 {
   "name": "simple-pool",
   "description": "Simple Pooling Solution for a very simple distribution/loadbalancing of whatever you want",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Valiton GmbH",
     "url": "http://www.valiton.com"

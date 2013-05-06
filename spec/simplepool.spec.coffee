@@ -79,3 +79,25 @@ describe 'SimplePool', ->
       simplepool = new SimplePool workers
       for i in [1..100]
         expect(simplepool.random()).toBeOneOf workers
+
+
+  describe 'all', ->
+
+    it 'should return all initialized workers', ->
+      simplepool = new SimplePool ['worker1', 'worker2', 'worker3']
+      expect(simplepool.all()).toEqual ['worker1', 'worker2', 'worker3']
+
+    it 'should return all workers when new workers were added', ->
+      simplepool = new SimplePool ['worker1', 'worker2']
+      expect(simplepool.all()).toEqual ['worker1', 'worker2']
+      simplepool.add 'worker3'
+      expect(simplepool.all()).toEqual ['worker1', 'worker2', 'worker3']
+
+    it 'should return all workers when workers were removed', ->
+      simplepool = new SimplePool ['worker1', 'worker2', 'worker3']
+      expect(simplepool.all()).toEqual ['worker1', 'worker2', 'worker3']
+      simplepool.remove 'worker1'
+      expect(simplepool.all()).toEqual ['worker2', 'worker3']
+
+
+
