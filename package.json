@@ -1,0 +1,54 @@
+{
+  "name": "simple-pool",
+  "description": "Simple Pooling Solution for a very simple distribution/loadbalancing of whatever you want",
+  "version": "0.1.0",
+  "author": {
+    "name": "Valiton GmbH",
+    "url": "http://www.valiton.com"
+  },
+  "contributors": [
+    {
+      "name": "Bastian Behrens",
+      "email": "bastian.behrens@valiton.com"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Bastian Behrens",
+      "email": "bastian.behrens@valiton.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/valiton/node-simple-pool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/valiton/node-simple-pool/issues"
+  },
+  "main": "lib/simplepool.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "random-tools": "0.0.5",
+    "npm": "~1.2.19",
+    "install": "~0.1.7"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.4.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-coffeelint": "~0.0.6",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-jsdoc": "~0.3.1",
+    "grunt-jasmine-node": "~0.1.0",
+    "jasmine-matchers": "~0.2.1"
+  },
+  "keywords": [
+    "simplepool",
+    "pool",
+    "simple",
+    "distribute",
+    "loadbalancing"
+  ]
+}
