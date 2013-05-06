@@ -1,5 +1,7 @@
 # simple-pool
 
+[![Build Status](https://travis-ci.org/valiton/node-simple-pool.png?branch=master)](https://travis-ci.org/valiton/node-simple-pool)
+
 Ever wanted to add e.g. some workers to a simple Pool, doing a simple distributing/loadbalancing? there are great modules like [generic-pool](https://npmjs.org/package/generic-pool) out there if you want do a real loadbalancing and pooling.
 
 If you just need a simple distribution solution, simple-pool is exactly what you want!
