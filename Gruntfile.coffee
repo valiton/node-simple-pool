@@ -1,4 +1,4 @@
-# Basic vInsight-lib-module configuration
+
 module.exports = (grunt) ->
 
   grunt.initConfig
